@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="app.js"></script>
+    <title>Card Game!</title>
+  </head>
+  <body>
+    <div id="board">
+        <div id="rules">
+          <button id="newDeck">New Deck</button>
+          <button id="drawBtn">Draw Card</button>
+        <p class="rulesWords"><b class="black">    WELCOME!</b>
+         </br>  This is my crude version of the card game 21!
+         </br><b class="black"> Rules:</b>
+         </br>  Get to 21 <b>EXACTLY</b> to win anything higher loses
+         </br>  <b class="black">How to start</b>
+         </br>  To start hit the "New Deck" button
+         </br><B class="black"> Face card value: </B>
+         </br>  KING = 10
+         </br>  QUEEN = 10
+         </br>  JACK = 10
+         </br>  Ace = 11
+         </br>  <b class="black">COUNT:</b>
+         
+        </p>
+      </div>
+    </div>
+    <div id="table">
+        <div id="header">
+            <p class="words">HAND:</p>
+            
+        </div>
+      <div id="hand"></div>
+    </div>
+  </body>
+</html>

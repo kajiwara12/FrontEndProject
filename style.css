@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+}
+#rules {
+    background-color: rgb(125, 75, 8);
+  display: flex;
+  flex-wrap: wrap;
+  width: 175px;
+  height:500px
+  padding: 5px;
+}
+.rulesWords{
+    background-color: rgb(125, 75, 8);
+    font-size: 18px;
+    margin-left: 0;
+    -webkit-text-fill-color: black;
+    margin-bottom: 0;
+    padding: 5px;
+
+}
+.black {
+  -webkit-text-fill-color: white;
+}
+.card {
+  height: 200px;
+  width: 180px;
+}
+#table {
+  height: 800px;
+  width: 780px;
+  background-color: green;
+  -webkit-text-fill-color: ivory;
+  font-size: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.words {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 380px;
+}
+#countVis{
+    font-size: 25px;
+    margin: 0;
+    -webkit-text-fill-color: white;
+    padding: 5px;
+}
