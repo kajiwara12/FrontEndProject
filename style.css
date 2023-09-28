@@ -8,26 +8,23 @@ body {
   align-items: center;
 }
 #rules {
-  background-color: rgb(125, 75, 8);
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
   height: 200px;
   padding: 5px;
-  border-radius: 25px;
 }
 .rulesWords {
-  background-color: rgb(125, 75, 8);
+  background-color: sandybrown;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
   margin-bottom: 0;
   margin: 0;
   padding: 16px;
-  border-radius: 25px;
 }
 .startGuide {
-  background-color: rgb(125, 75, 8);
+  background-color: sandybrown;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
@@ -36,7 +33,7 @@ body {
   padding: 16px;
 }
 .pointValue {
-  background-color: rgb(125, 75, 8);
+  background-color: sandybrown;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
