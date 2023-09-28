@@ -16,30 +16,54 @@
   <body>
     <div id="board">
         <div id="rules">
-          <button id="newDeck">New Deck</button>
-          <button id="drawBtn">Draw Card</button>
-        <p class="rulesWords"><b class="black">    WELCOME!</b>
-         </br>  This is my crude version of the card game 21!
-         </br><b class="black"> Rules:</b>
-         </br>  Get to 21 <b>EXACTLY</b> to win anything higher loses
-         </br>  <b class="black">How to start</b>
-         </br>  To start hit the "New Deck" button
-         </br><B class="black"> Face card value: </B>
-         </br>  KING = 10
-         </br>  QUEEN = 10
-         </br>  JACK = 10
-         </br>  Ace = 11
-         </br>  <b class="black">COUNT:</b>
-         
-        </p>
-      </div>
+            <p class="rulesWords"><b class="black">    WELCOME! </b>This is my crude version of the card game Blackjack!
+        </br><b class="black"> Rules:</b>
+    </br>  Get a hand value higher than the dealer.
+    </br>  If you go over 21 you lose.
+    </br>  The dealer will draw cards until their
+    </br>  hand is greater than <b class="black">17 </b>when you press stay
+    <div class="startGuide">
+    </br>  <b class="black">How to start:</b>
+    </br>  1.Press<b class="black">"New Deck"</b> button.
+    </br>  2.Press <b class="black">"Deal Cards"</b> button
+    </br>  3.To take another card press the <b class="black">"HIT" </b> button
+    </br>  4.Press <b class="black">"STAY"</b> button. Then the Dealer
+    </br> will take their turn
+    </br>  5.To play again press "Deal Cards" again
     </div>
-    <div id="table">
+    <div class="pointValue">
+    </br><B class="black"> Face card value: </B>
+    </br>  KING = 10
+    </br>  QUEEN = 10
+    </br>  JACK = 10
+    </br>  Ace = 1/11
+    </div>
+    
+</div>
+<button class="button" id="newDeck">New Deck</button>
+<button class="button" id="startBtn">Deal Cards</button>
+<button class="button" id="drawBtn">HIT</button>
+<button class="button" id="stayBtn">STAY</button>
+</div>
+<div id="table">
+    <div id="box1">
         <div id="header">
             <p class="words">HAND:</p>
-            
+            <div id="hand"></div>
         </div>
-      <div id="hand"></div>
+    </div>
+    <div id="box2">
+        <div id="dealerheader">
+            <p class="dealerWords">Dealer HAND:</p>
+            <div id="dealerHand"></div>
+        </div>
+    </div>
+    <div id="message">
+    </br>  <b class="black" id="playerWords">Count:</b>
+    </br>   <b class="black"id="dealerWords">Dealer Count:</b>
+    <div id="status"></div>
+    </div>
+
     </div>
   </body>
 </html>
