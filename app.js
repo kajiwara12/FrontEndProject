@@ -8,6 +8,8 @@ const dealerHand = document.querySelector("#dealerHand");
 const header = document.querySelector("#header");
 const playerWords = document.querySelector("#playerWords");
 const dealerWords = document.querySelector("#dealerWords");
+const timesWon = document.querySelector("#timesWon");
+const timesLost = document.querySelector("#timesLost");
 const wStatus = document.querySelector("#status");
 
 const rules = document.querySelector("#rules");
@@ -17,9 +19,16 @@ function playGame() {
   let playing = false;
   let playerCards = [];
   let dealerCards = [];
+  let winCounter = 0;
+  let lossCounter = 0;
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~GET A NEW DECK
   newDeckBtn.addEventListener("click", () => {
     deckLoaded = true;
+    playerCards = [];
+    dealerCards = [];
+    playerHand.innerHTML = "";
+    dealerHand.innerHTML = "";
+    wStatus.textContent = "";
     $.get(
       "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=2",
       (data) => {
@@ -118,6 +127,8 @@ function playGame() {
     }
     if (playerCount > 21) {
       wStatus.textContent = "You Lost";
+      lossCounter++;
+      timesLost.textContent = "Times Lost:" + lossCounter;
     }
     playerWords.textContent = "Count:" + playerCount;
     return playerCount;
@@ -182,12 +193,18 @@ function playGame() {
   function determineWinner(playerHandValue, dealerHandValue) {
     if (playerHandValue > dealerHandValue || dealerHandValue > 21) {
       wStatus.textContent = "You Win";
+      winCounter++;
+      timesWon.textContent = "Times Won:" + winCounter;
     } else if (dealerHandValue === playerHandValue && dealerHandValue > 17) {
       wStatus.textContent = "You Tied";
     } else if (playerHandValue > 21) {
       wStatus.textContent = "You Lost";
+      lossCounter++;
+      timesLost.textContent = "Times Lost:" + lossCounter;
     } else {
       wStatus.textContent = "You Lost";
+      lossCounter++;
+      timesLost.textContent = "Times Lost:" + lossCounter;
     }
   }
 }

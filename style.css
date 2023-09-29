@@ -15,7 +15,7 @@ body {
   padding: 5px;
 }
 .rulesWords {
-  background-color: sandybrown;
+  background-color: navajowhite;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
@@ -24,7 +24,7 @@ body {
   padding: 16px;
 }
 .startGuide {
-  background-color: sandybrown;
+  background-color: navajowhite;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
@@ -33,7 +33,7 @@ body {
   padding: 16px;
 }
 .pointValue {
-  background-color: sandybrown;
+  background-color: navajowhite;
   font-size: 18px;
   margin-left: 0;
   -webkit-text-fill-color: black;
@@ -42,7 +42,7 @@ body {
   padding: 16px;
 }
 .black {
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: crimson;
 }
 .card {
   height: 150px;
@@ -103,7 +103,7 @@ body {
 #message {
   display: flex;
   flex-wrap: nowrap;
-  height: 250px;
+  height: 300px;
   width: 250px;
   flex-direction: column;
   background-color: lightsalmon;
