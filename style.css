@@ -103,15 +103,37 @@ body {
 #message {
   display: flex;
   flex-wrap: nowrap;
-  height: 300px;
+  height: 250px;
   width: 250px;
   flex-direction: column;
   background-color: lightsalmon;
-  font-size: 35px;
+  font-size: 30px;
   -webkit-text-fill-color: black;
   border-radius: 5px;
 }
 .button {
   background-color: lightgray;
   -webkit-text-fill-color: black;
+}
+#playerWords {
+  margin: 0;
+  margin-left: 13px;
+  margin-top: 13px;
+}
+#dealerWords {
+  margin: 0;
+  margin-left: 13px;
+}
+#timesWon {
+  margin: 0;
+  margin-left: 13px;
+}
+#timesLost {
+  margin: 0;
+  margin-left: 13px;
+}
+#status {
+  margin-top: 20px;
+  margin-left: 13px;
+  font-weight: bolder;
 }

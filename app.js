@@ -127,6 +127,7 @@ function playGame() {
     }
     if (playerCount > 21) {
       wStatus.textContent = "You Lost";
+
       lossCounter++;
       timesLost.textContent = "Times Lost:" + lossCounter;
     }
@@ -193,16 +194,19 @@ function playGame() {
   function determineWinner(playerHandValue, dealerHandValue) {
     if (playerHandValue > dealerHandValue || dealerHandValue > 21) {
       wStatus.textContent = "You Win";
+      wStatus.style.color = "green";
       winCounter++;
       timesWon.textContent = "Times Won:" + winCounter;
     } else if (dealerHandValue === playerHandValue && dealerHandValue > 17) {
       wStatus.textContent = "You Tied";
     } else if (playerHandValue > 21) {
       wStatus.textContent = "You Lost";
-      lossCounter++;
+
+      wStatus.lossCounter++;
       timesLost.textContent = "Times Lost:" + lossCounter;
     } else {
       wStatus.textContent = "You Lost";
+
       lossCounter++;
       timesLost.textContent = "Times Lost:" + lossCounter;
     }
